@@ -13,8 +13,9 @@ public class Selenium {
         WebDriver driver = new FirefoxDriver(); // Version 1.1 :: Firefox
 
         String test_case_id = "TC-001.01";
-        String url = "http://www.dpreview.com";
-        String title_expected = "Digital Photography Review: Digital Photography Review";
+        String param[] = args[0].split("\\|");
+        String url = param[0];
+        String title_expected = param[1];
 
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
