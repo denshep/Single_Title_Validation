@@ -13,7 +13,7 @@ public class Selenium {
         WebDriver driver = new FirefoxDriver(); // Version 1.1 :: Firefox
 
         String test_case_id = "TC-001.01";
-        String param[] = args[0].split("\\|");
+        String param[] = args[0].split("\\,");
         String url = param[0];
         String title_expected = param[1];
 
