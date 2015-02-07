@@ -13,9 +13,16 @@ public class Selenium {
         WebDriver driver = new FirefoxDriver(); // Version 1.1 :: Firefox
 
         String test_case_id = "TC-001.01";
-        String param[] = args[0].split("\\,");
-        String url = param[0];
-        String title_expected = param[1];
+
+
+       //Passing values as parameters
+
+       // String param[] = args[0].split("\\,");
+       //        String url = param[0];
+       //        String title_expected = param[1];
+
+        String url = "http://learn2test.net";
+        String title_expected = "learn2test.net";
 
         driver.get(url);
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
